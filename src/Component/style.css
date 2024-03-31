@@ -1,4 +1,4 @@
-.modal{
+.container{
  
     padding-top:1.5rem;
    
@@ -17,7 +17,7 @@
     outline: none;
     font-size: 1.1rem;
 }
-.modal-content{
+.modal{
     width: 100%;
    position: absolute;
    top:0;
@@ -28,10 +28,10 @@
    width: 100%;
    height: 100vh;   
 }
-.form-content label{
+.modal-content label{
     font-weight: bold;
 }
-.form-content{
+.modal-content{
     border-radius: 0.5rem;
     background-color: white;
     width: 35%;
@@ -57,32 +57,32 @@
     gap:0.8rem;
 
 }
-.form-content input{
+.modal-content input{
     width: 80%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
 
 }
 .submit-button{
-    
+
 }
 @media screen and (max-width:1200px) {
-    .form-content{
+    .modal-content{
         width: 60%;
     }   
 }
 @media screen and (max-width:991px) {
-    .form-content{
+    .modal-content{
         width: 70%;
     }   
 }
 @media screen and (max-width:600px) {
-    .form-content{
+    .modal-content{
         width: 85%;
     }   
 }
 @media screen and (max-width:450px) {
-    .form-content{
+    .modal-content{
         width: 90%;
     }   
 }

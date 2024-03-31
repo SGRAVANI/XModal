@@ -34,16 +34,8 @@ function handleSubmit(e)
     alert("Invalid date of birth. Date of birth can not be in the future.")
     return;
   }
-  
-  //let todayDate=new Date().toLocaleDateString();
-  // let formatDate=todayDate.split("/")
-  // let finalDate=`${formatDate[2]}-${formatDate[1]}-${formatDate[0]}`
-  // let selectedDateFractions=selectedDate.split("-")
-  // if(selectedDateFractions[2]>formatDate[0])
-  // {
-  //   alert("")
-  // }
-  setF(false)
+  console.log("submitted")
+    setF(false)
 }
  function handleForm()
  {
@@ -58,11 +50,11 @@ function handleSubmit(e)
 }
  return (
     
-<div className="modal">
+<div className="container">
 <h1>User Details Modal</h1>
 <button className='btn' onClick={handleForm}>Open Form</button>
-{f&&<div className="modal-content" onClick={handleModal} id="modal">
-<form className='form-content' onSubmit={handleSubmit}>
+{f&&<div className="modal" onClick={handleModal} id="modal">
+<form className='modal-content' onSubmit={handleSubmit}>
  <h1>Form Details</h1>
 
    <label htmlFor='username'>Username:</label>
